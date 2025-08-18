@@ -5,7 +5,7 @@ import {
   Roles,
   Permissions,
 } from "../enums/role.enum";
-import { RolesPermissions } from "../utils/role-permission";
+import { RolePermissions } from "../utils/role-permission";
 
 export interface RoleDocument extends Document {
   name: RoleType;
@@ -25,7 +25,7 @@ const roleSchema = new Schema<RoleDocument>(
       enum: Object.values(Permissions),
       required: true,
       default: function (this: RoleDocument) {
-        return RolesPermissions[this.name];
+        return RolePermissions[this.name];
       },
     },
   },

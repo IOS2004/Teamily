@@ -5,7 +5,7 @@ import {
   RoleType,
 } from "../enums/role.enum";
 
-export const RolesPermissions: Record<RoleType, Array<PermissionType>> = {
+export const RolePermissions: Record<RoleType, Array<PermissionType>> = {
   ADMIN: [
     Permissions.ADD_MEMBER,
     Permissions.CREATE_PROJECT,
