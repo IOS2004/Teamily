@@ -14,8 +14,8 @@ export const createWorkspaceSchema = z.object({
 });
 
 export const updateWorkspaceSchema = z.object({
-  name: nameSchema,
-  description: descriptionSchema,
+  name: nameSchema.optional(),
+  description: descriptionSchema.optional(),
 });
 
 export const workspaceIdSchema = z

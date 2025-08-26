@@ -119,7 +119,7 @@ export const changeMemberRoleService = async (
 
 export const updateWorkspaceByIdService = async (
   workspaceId: string,
-  name: string,
+  name?: string,
   description?: string
 ) => {
   const workspace = await WorkspaceModel.findById(workspaceId);
