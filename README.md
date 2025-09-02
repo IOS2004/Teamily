@@ -2,8 +2,6 @@
 
 A modern team collaboration platform built with React and Node.js that enables teams to manage workspaces, projects, and tasks efficiently.
 
-![Teamily](client/public/images/workspace.jpg)
-
 ## 🚀 Features
 
 ### 🔐 Authentication
